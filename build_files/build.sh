@@ -2,6 +2,8 @@
 
 set -ouex pipefail
 
+IMAGE="$1"
+
 function echo_group() {
     local WHAT
     WHAT="$(
