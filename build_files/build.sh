@@ -28,6 +28,3 @@ case "$IMAGE" in
     dnf remove -y ptyxis
     ;;
 esac
-
-# Cleanup
-echo_group /ctx/cleanup.sh
