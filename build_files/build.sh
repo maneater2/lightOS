@@ -20,10 +20,10 @@ function echo_group() {
 case "$IMAGE" in
 "workstation"*)
     cp /ctx/packages/repos/ghostty.repo /etc/yum.repos.d/ghostty.repo
-    echo_group /ctx/utils.sh
-    echo_group /ctx/containers.sh
-    echo_group /ctx/gnome-extensions.sh
-    echo_group /ctx/virt.sh
+    echo_group /ctx/packages/utils.sh
+    echo_group /ctx/packages/containers.sh
+    echo_group /ctx/packages/gnome-extensions.sh
+    echo_group /ctx/packages/virt.sh
     echo_group /ctx/branding/branding-ublue.sh
     dnf5 install -y ghostty
     dnf remove -y ptyxis
