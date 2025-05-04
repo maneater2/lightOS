@@ -14,14 +14,6 @@ function echo_group() {
     echo "::endgroup::"
 }
 
-# Common
-echo_group /ctx/remove-cliwrap.sh
-echo_group /ctx/server-packages.sh
-echo_group /ctx/distrobox.sh
-echo_group /ctx/branding.sh
-echo_group /ctx/signing.sh
-echo_group /ctx/composefs.sh
-
 # Desktops
 case "$IMAGE" in
 "workstation"*)
